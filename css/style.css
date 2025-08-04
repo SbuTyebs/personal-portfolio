@@ -1,12 +1,15 @@
+/* Scroll behaviour */
 html {
   scroll-behavior: smooth;
 }
 
+/* Header section */
 header {
     background-color: #034674; 
     padding: 20px 0;
 }
 
+/* Main section */
 main {
   background-color: #182e42;  
   padding: 1em;               
@@ -18,6 +21,7 @@ main section {
   margin-bottom: 2em;
 }
 
+/* Body Section */
 body {
     font-family: Open Sans, sans-serif;
     margin: 0;
@@ -26,6 +30,7 @@ body {
     color: #cccccc;
 }
 
+/* Styling the footer */
 footer {
   background-color: #222f3d;
   padding: 20px;
@@ -107,5 +112,8 @@ nav {
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
-  
+  nav {
+    display: flex;
+    justify-content: space-between; 
+  }
 }
