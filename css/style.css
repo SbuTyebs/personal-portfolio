@@ -3,8 +3,19 @@ html {
 }
 
 header {
-    background-color: #034674; /* Or #3498db */
+    background-color: #034674; 
     padding: 20px 0;
+}
+
+main {
+  background-color: #182e42;  
+  padding: 1em;               
+  min-height: 60vh;           
+  
+}
+
+main section {
+  margin-bottom: 2em;
 }
 
 body {
