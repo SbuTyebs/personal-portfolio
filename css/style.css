@@ -1,0 +1,100 @@
+html {
+  scroll-behavior: smooth;
+}
+
+header {
+    background-color: #034674; /* Or #3498db */
+    padding: 20px 0;
+}
+
+body {
+    font-family: Open Sans, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #2c3e50;
+    color: #cccccc;
+}
+
+footer {
+  background-color: #222f3d;
+  padding: 20px;
+  text-align: center;
+  font-size: 14px;
+}
+footer .social-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; 
+    justify-content: center; 
+}
+footer .social-links li {
+    margin: 0 10px; 
+}
+footer .social-links a {
+  text-decoration: none; 
+}
+
+/* Styling the navigation bar */
+nav ul {
+    display: flex;
+    justify-content: flex-end; 
+    list-style: none; 
+    padding: 0; 
+    margin: 0; 
+}
+
+nav ul li {
+    margin: 0; 
+}
+
+/* Enhancing navigation links */
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    padding: 10px 15px;
+    display: block; 
+}
+
+/* Interactive Hover Effects */
+nav ul li a:hover {
+    background-color: #0f1111;
+    transition: background-color 0.3s ease;
+}
+
+/* Hyperlinks */
+a { 
+  text-decoration: none;
+    color: #ffffff;
+    padding: 10px 15px;
+    display: -moz-box;
+    color: #007bff; 
+}
+
+a:visited { 
+  color: #663399;
+}
+
+a:hover { 
+  color: #0056b3;
+}
+
+a:active { 
+  color: #ff0000;
+}
+
+/* Various Screen Sizes */
+nav {
+  display: flex;
+  justify-content: space-around;
+}
+
+@media (max-width: 600px) {
+  nav {
+    display: block; 
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  
+}
