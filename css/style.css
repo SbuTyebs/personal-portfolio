@@ -1,119 +1,97 @@
-/* Scroll behaviour */
-html {
-  scroll-behavior: smooth;
-}
 
-/* Header section */
-header {
-    background-color: #034674; 
-    padding: 20px 0;
-}
-
-/* Main section */
-main {
-  background-color: #182e42;  
-  padding: 1em;               
-  min-height: 60vh;           
-  
-}
-
-main section {
-  margin-bottom: 2em;
-}
-
-/* Body Section */
+/* Body styles */
 body {
-    font-family: Open Sans, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #2c3e50;
-    color: #cccccc;
+    font-family: 'Segoe UI', 'Cambria', 'Cochin', 'Georgia', 'Times New Roman', Times, serif, sans-serif;
+    margin: 40px;
+    padding: 30px;
+    background: linear-gradient(135deg, #e6e6fa 0%, #c1e1ec 100%);
+    color: #222;
+    line-height: 1.7;
+    font-size: 22px;
+    border: 4px solid #05434b;
+    box-shadow: 0 8px 32px rgba(5, 67, 75, 0.18);
+    border-radius: 18px; 
+    transition: box-shadow 0.3s;
 }
 
-/* Styling the footer */
-footer {
-  background-color: #222f3d;
-  padding: 20px;
-  text-align: center;
-  font-size: 14px;
-}
-footer .social-links {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex; 
-    justify-content: center; 
-}
-footer .social-links li {
-    margin: 0 10px; 
-}
-footer .social-links a {
-  text-decoration: none; 
+body:hover {
+    box-shadow: 0 16px 48px rgba(5, 67, 75, 0.25);
 }
 
-/* Styling the navigation bar */
-nav ul {
-    display: flex;
-    justify-content: flex-end; 
-    list-style: none; 
-    padding: 0; 
-    margin: 0; 
+main {
+    max-width: 850px;
+    width: 100%;
+    margin: 40px auto;
+    padding: 32px;
+    background: #fff;
+    border: 2px solid #9b94f5;
+    border-radius: 18px;
+    box-shadow: 0 4px 24px rgba(155, 148, 245, 0.12);
+    transition: box-shadow 0.3s;
 }
 
-nav ul li {
-    margin: 0; 
+main:hover {
+    box-shadow: 0 8px 32px rgba(155, 148, 245, 0.18);
 }
 
-/* Enhancing navigation links */
-nav ul li a {
-    text-decoration: none;
-    color: #ffffff;
-    padding: 10px 15px;
-    display: block; 
+/* Header styles */
+header {
+    background-color: #05434b; 
+    color: white; 
+    padding: 15px; 
+    text-align: center; 
+    font-size: 24px; 
+    box-shadow: 20px 4px (14, 13, 13, 0.1); 
 }
 
-/* Interactive Hover Effects */
-nav ul li a:hover {
-    background-color: #0f1111;
-    transition: background-color 0.3s ease;
-}
-
-/* Hyperlinks */
-a { 
-  text-decoration: none;
-    color: #ffffff;
-    padding: 10px 15px;
-    display: -moz-box;
-    color: #007bff; 
-}
-
-a:visited { 
-  color: #663399;
-}
-
-a:hover { 
-  color: #0056b3;
-}
-
-a:active { 
-  color: #ff0000;
-}
-
-/* Various Screen Sizes */
+/*Navigation links*/
 nav {
-  display: flex;
-  justify-content: space-around;
+    background-color: #05434b; 
+    color: white; 
+    padding: 7px 0; 
+    text-align: center; 
+    font-size: 18px; 
+    box-shadow: 0 2px 8px (216, 7, 146, 0.1); 
+}
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex; 
+    justify-content: center;
+    gap: 10px;
+}
+nav ul li a {
+    text-decoration: none; 
+    color: rgb(3, 122, 158);
+}
+nav ul li a:hover {
+    background-color: transparent;
+    color: #470196;
 }
 
-@media (max-width: 600px) {
-  nav {
-    display: block; 
-  }
-}
 
-@media (min-width: 768px) and (max-width: 1024px) {
-  nav {
-    display: flex;
-    justify-content: space-between; 
-  }
+
+/*footer styles*/
+footer {
+    background-color: #05434b; 
+    color: white; 
+    text-align: center; 
+    padding: 10px; 
+    font-size: 14px; 
+    position: relative; 
+    bottom: 0; 
+    width: 100%; 
+    box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.1); 
+    cursor: pointer;
+}
+footer p {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    color: #fff;
+}
+footer:hover {
+    background-color: #470196;
+    color: #fff; 
 }
