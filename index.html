@@ -1,101 +1,229 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Personal portfolio of Sibusiso Tyelebana, aspiring web developer and Python enthusiast. Showcasing skills, projects, and a passion for building creative web solutions.">
-    <meta name="keywords" content="portfolio, web developer, Python, HTML, CSS, junior developer, projects, Sibusiso, Tyelebana, Johannesburg">
-    <meta name="author" content="Sibusiso Tyelebana">
-    <title>Sibusiso Tyelebana</title>
-    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Sibusiso Tyelebana's personal portfolio - Junior Web Developer and Data Science enthusiast based in Johannesburg, South Africa. Explore my projects, skills, and connect with me." />
+    <meta name="keywords" content="Sibusiso Tyelebana, Junior Web Developer, Data Scientist, Portfolio, Python, HTML, CSS, SQL, Johannesburg, Technology" />
+    <meta name="author" content="Sibusiso Tyelebana" />
+    <title>Sibusiso Tyelebana | Junior Web Developer & Data Science Enthusiast</title>
+    <style>
+        /* Internal Styles adapted from style.css and improved */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 40px;
+            padding: 30px;
+            background: linear-gradient(135deg, #e6e6fa 0%, #c1e1ec 100%);
+            color: #1a1a1a;
+            line-height: 1.7;
+            font-size: 18px;
+            border: 4px solid #05434b;
+            box-shadow: 0 8px 32px rgba(5, 67, 75, 0.18);
+            border-radius: 18px;
+            transition: box-shadow 0.3s;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        body:hover {
+            box-shadow: 0 16px 48px rgba(5, 67, 75, 0.25);
+        }
+        main {
+            max-width: 850px;
+            width: 100%;
+            margin: 40px auto;
+            padding: 32px;
+            background: #ffffffcc; /* Slight transparency for modern look */
+            border: 2px solid #9b94f5;
+            border-radius: 18px;
+            box-shadow: 0 4px 24px rgba(155, 148, 245, 0.12);
+            transition: box-shadow 0.3s;
+        }
+        main:hover {
+            box-shadow: 0 8px 32px rgba(155, 148, 245, 0.18);
+        }
+        header {
+            background-color: #05434b;
+            color: white;
+            padding: 20px 15px;
+            text-align: center;
+            font-size: 28px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            border-radius: 15px 15px 0 0;
+            box-shadow: 0 4px 10px rgba(5, 67, 75, 0.5);
+        }
+        nav {
+            background-color: #05434b;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+            font-size: 18px;
+            box-shadow: 0 2px 8px rgba(3, 122, 158, 0.2);
+            border-radius: 0 0 15px 15px;
+            margin-bottom: 30px;
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 18px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #03a4d9;
+            font-weight: 600;
+            transition: color 0.3s ease, background-color 0.3s ease;
+            padding: 6px 15px;
+            border-radius: 12px;
+        }
+        nav ul li a:hover,
+        nav ul li a:focus {
+            background-color: #470196;
+            color: #fff;
+            outline: none;
+        }
+        section {
+            margin-bottom: 36px;
+        }
+        h2 {
+            font-size: 1.8rem;
+            color: #05394b;
+            border-bottom: 2px solid #9b94f5;
+            padding-bottom: 6px;
+            margin-bottom: 18px;
+            font-weight: 700;
+        }
+        p, ul {
+            margin-bottom: 16px;
+            font-size: 1rem;
+            color: #222;
+        }
+        ul li {
+            padding-left: 6px;
+            margin-bottom: 8px;
+        }
+        a {
+            color: #05434b;
+            font-weight: 600;
+        }
+        a:hover, a:focus {
+            color: #470196;
+            text-decoration: underline;
+        }
+        /* Footer */
+        footer {
+            background-color: #05434b;
+            color: white;
+            text-align: center;
+            padding: 14px 10px;
+            font-size: 14px;
+            box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 0 0 18px 18px;
+            cursor: default;
+        }
+        footer p {
+            margin: 0;
+            padding: 0;
+            font-size: 14px;
+            color: #fff;
+        }
+        footer:hover {
+            background-color: #470196;
+            color: #fff;
+        }
+        /* Buttons and CV Link style */
+        .btn-cv {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #9b94f5;
+            color: #fff;
+            font-weight: 700;
+            font-size: 1rem;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+            margin-top: 10px;
+        }
+        .btn-cv:hover,
+        .btn-cv:focus {
+            background-color: #470196;
+            outline: none;
+        }
+        /* Responsive adjustments */
+        @media (max-width: 600px) {
+            body {
+                font-size: 16px;
+                padding: 20px;
+                margin: 20px;
+            }
+            nav ul {
+                flex-direction: column;
+                gap: 12px;
+            }
+        }
+    </style>
 </head>
-
 <body>
-<!-- ===== Header Section ===== -->
-    <header class="main-header">
-        <h1 style="text-align: center;">My Journey in Tech</h1>
-          <p>Welcome! I'm eager to launch my career in web development, passionate about building efficient solutions. Let’s build something great together.</p>
-        <nav>
-          <ul>
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#programming-languages">Programming Languages</a></li>
-            <li><a href="#education">Educational Background</a></li>
-            <li><a href="#interests">Interests</a></li>
-            <li><a href="#contact">Contact Details</a></li>
-          </ul>
-        </nav>
-    </header>
-  <!-- ===== End Header Section ===== -->
-
-  <!-- ===== Main Content Section ===== -->
     <main>
-        <section id="about">
-          <h2>About Me</h2>
-          <img src="your-profile-photo.jpg" alt="Portrait of Sibusiso Tyelebana" width="120">
-          <p>
-            Hi! I'm Sibusiso Tyelebana, a programmer based in Johannesburg, South Africa.
-          </p>
-          <p>  
-            I am currently a student at Power Learn Project Academy, where I am learning web development and honing my skills in web development. 
-            My goal is to become a proficient web developer and contribute to innovative projects that make a difference.
-          </p>
+        <header>
+            Sibusiso Tyelebana – Junior Web Developer & Data Science Enthusiast
+        </header>
 
-          <p>
-            If you’d like to build or collaborate on a project together, please get in touch!
-          </p>
-          <p>
-            <a href="#contact">Connect With Me</a>
-          </p>
-        </section>
-
-        <section id="programming-languages">
-          <h2>Programming Languages</h2>
-          <ul>
-            <li>Python (Proficient)</li>
-            <li>HTML (Learning)</li>
-            <li>CSS (Learning)</li>
-          </ul>
-        </section>
-
-        <section id="education">
-          <h2>Educational Background</h2>
-          <p>
-            I have completed certifications in Python and SQL, gaining a solid foundation in programming and database management.<br>
-            Currently, I am expanding my skills in web development and data sciences to broaden my expertise and pursue new opportunities.<br>
-            <a href="https://drive.google.com/file/d/1I4AGSTws_IoJzI8Pyi5p7yZrAQv-NR7J/view?usp=sharing" download>Download My CV</a>
-          </p>
-        </section>
-
-        <section id="interests">
-          <h2>Interests</h2>
-          <p>
-            I chose web development and data science because I enjoy the challenge of solving real-world problems and love seeing ideas come to life as interactive digital experiences. 
-            My coding journey is inspired by the endless opportunities to learn, create, and make a positive impact through technology.
-            I’m naturally curious and love discovering how things work. I bring perseverance to every challenge, pay close attention to details, and always look for creative approaches to problems. 
-            I’m adaptable and open-minded, eager to learn from every experience and collaborate with others to create the best results.
-          </p>
-        </section>
-
-        <section id="contact">
-          <h2>Get In Touch</h2>
-            <p>You can reach me via email or connect with me on professional platforms:</p>
+        <nav>
             <ul>
-              <li>Email: <a href="mailto:sibucelotyelebana@gmail.com" target="_blank">sibucelotyelebana@gmail.com</a></li>
-              <li>GitHub: <a href="https://github.com/SbuTyebs" target="_blank">SbuTyebs</a></li>
-              <li>LinkedIn: <a href="https://www.linkedin.com/in/sibusiso-tyelebana-7782b6270/" target="_blank">Sibusiso Tyelebana</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#interests">Interests</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <section id="about" aria-label="About Me">
+            <h2>About Me</h2>
+            <p>Hello! I'm <strong>Sibusiso Tyelebana</strong>, a passionate programmer based in Johannesburg, South Africa. Currently, I am a student at <a href="https://powerlearnproject.academy" target="_blank" rel="noopener noreferrer">Power Learn Project Academy</a>, developing skills in web development and data science. My ambition is to become a proficient web developer and contribute to innovative projects that make a positive impact.</p>
+            <p>If you're interested in collaborating or building projects together, please <a href="#contact">get in touch</a>!</p>
+            <a href="Sibusiso_Tyelebana_CV.pdf" download class="btn-cv" aria-label="Download my CV">Download My CV</a>
+        </section>
+
+        <section id="skills" aria-label="Programming Skills">
+            <h2>Programming Languages & Skills</h2>
+            <ul>
+                <li><strong>Python:</strong> Proficient — experienced in scripting, data analysis, and automation.</li>
+                <li><strong>HTML & CSS:</strong> Learning — building responsive and accessible websites.</li>
+                <li><strong>SQL:</strong> Knowledgeable — managing and querying databases.</li>
             </ul>
         </section>
-  <!-- ===== End Main Content Section ===== -->
+
+        <section id="education" aria-label="Educational Background">
+            <h2>Educational Background</h2>
+            <p>I have earned certifications in Python and SQL, which provided me a solid foundation in programming and database management. I am currently expanding my expertise in web development and data sciences to embrace a broader tech skillset.</p>
+        </section>
+
+        <section id="interests" aria-label="Interests and Motivation">
+            <h2>Interests</h2>
+            <p>I chose web development and data science because I enjoy solving real-world problems and bringing ideas to life as interactive digital experiences. My coding journey is driven by curiosity, creativity, and a desire to positively impact the world through technology.</p>
+            <p>I'm detail-oriented, adaptable, and open to collaboration, always eager to learn and improve from each experience.</p>
+        </section>
+
+        <section id="contact" aria-label="Contact Information">
+            <h2>Get In Touch</h2>
+            <p>You can reach me via email or connect with me on professional platforms:</p>
+            <ul>
+                <li>Email: <a href="mailto:sibucelotyelebana@gmail.com">sibucelotyelebana@gmail.com</a></li>
+                <li>GitHub: <a href="https://github.com/SbuTyebs" target="_blank" rel="noopener noreferrer">SbuTyebs</a></li>
+                <li>LinkedIn: <a href="https://www.linkedin.com/in/sibusisotyelebana" target="_blank" rel="noopener noreferrer">Sibusiso Tyelebana</a></li>
+            </ul>
+        </section>
+
+        <footer>
+            <p>&copy; 2025 Sibusiso Tyelebana. All rights reserved.</p>
+        </footer>
     </main>
 </body>
-
-<!-- ===== Footer Section ===== -->
-  <footer>
-    <p>© 2025 Sibusiso Tyelebana. All rights reserved.</p>
-    <ul class="social-links">
-    <li><a href="https://www.linkedin.com/in/sibusiso-tyelebana-7782b6270/">LinkedIn</a></li>
-    <li><a href="https://github.com/SbuTyebs" target="_blank">GitHub</a></li>
-    </ul>
-  </footer>
-<!-- ===== End Footer Section ===== -->
 </html>
